@@ -61,7 +61,7 @@ export default function SignIn() {
         // Check email and password validation
         if (validateEmail(formData.email) && validatePassword(formData.password)) {
             setOpenSnackbar(true);
-            setSnackbarMessage('Account successfully created');
+            setSnackbarMessage('Account successfully verified');
             // Reset form fields or clear state as needed
             setFormData({
                 email: '',
@@ -108,7 +108,7 @@ export default function SignIn() {
                     color="primary"
                     disabled={isSubmitDisabled}
                 >
-                    Sign Up
+                    Sign In
                 </Button>
 
             </form>

@@ -38,7 +38,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "pink" }}>
+    <AppBar position="static" style={{ backgroundColor: "gray" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -129,7 +129,7 @@ function Navbar() {
                 <Button
                   key={page.pathName}
                   onClick={handleCloseNavMenu}
-                  sx={location.pathname == page.pathName ? { my: 2, color: "blue", display: "block" } : { my: 2, color: "white", display: "block" }}
+                  sx={location.pathname == page.pathName ? { my: 2, color: "black", display: "block" } : { my: 2, color: "white", display: "block" }}
                 >
                   {page.displayName}
                 </Button>
